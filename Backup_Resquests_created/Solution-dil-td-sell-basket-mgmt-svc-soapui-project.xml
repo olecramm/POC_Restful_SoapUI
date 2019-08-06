@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b12b7333-5300-430f-a0f6-842129a9d05a" activeEnvironment="Default" name="Solution_dil-td-sell-basket-mgmt-svc" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="2913af10-efdb-47af-995b-d0aa8151a715" wadlVersion="http://wadl.dev.java.net/2009/02" name="RESTService_Requests" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description>Serviço de Acesso a API do Tesouro Direto</con:description><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://BRSP80CBPQ2:8080/</con:endpoint><con:endpoint>http://BRSP80CBPQ2:8089/</con:endpoint><con:endpoint>http://localhost:5000</con:endpoint><con:endpoint>http://localhost:8080</con:endpoint><con:endpoint>http://localhost:8080/</con:endpoint></con:endpoints><con:resource name="Verificar resgate para investidor" path="/investidor/validar-venda/{pathParameter}" id="6114c5b1-1950-42bf-8fc9-9dd0c13b027b"><con:description>3.3.1 Verificar resgate para investidor</con:description><con:settings/><con:parameters><con:parameter><con:name>pathParameter</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="MOCK_Verificar resgate para investidor" id="a91119c3-12e7-4e5a-943f-bdcb0165eb43" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:f30="http://localhost/investidor/validar-venda/200%2F30605678839">f30:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400 404 503 502 500 405</con:status><con:params/></con:representation><con:request name="200OK" id="e9af2b4a-f997-4a98-924f-ff5f1dc8abb8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/200%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="8037557f-8f31-414f-8210-a05b1776102c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/210%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="210/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="400" id="0d443f9b-df06-4cde-8102-2bc4c9890278" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/400%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="400/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="404" id="20899a0d-2d7f-4359-a980-82ecfe1950ea" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/404%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="404/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="503" id="1b08e3e0-c885-4d43-b821-b4440078724f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/503%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="503/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="502" id="f74d43e0-2f64-4152-8676-853f8e1e11f4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/502%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="502/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="500" id="3d57ec46-6d45-48e6-8c17-0b62ed90f525" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/500%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="500/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="405_GET" id="221a7301-4d9d-437d-9f05-002e89c43782" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/405%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="405/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request></con:method><con:method name="DIL_Verificar resgate para investidor" id="a91119c3-12e7-4e5a-943f-bdcb0165eb43" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:f30="http://localhost/investidor/validar-venda/200%2F30605678839">f30:Response</con:element></con:representation><con:request name="200OK" id="e9af2b4a-f997-4a98-924f-ff5f1dc8abb8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/200%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="8037557f-8f31-414f-8210-a05b1776102c" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="210/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="400" id="0d443f9b-df06-4cde-8102-2bc4c9890278" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="400/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="404" id="20899a0d-2d7f-4359-a980-82ecfe1950ea" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="404/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="503" id="1b08e3e0-c885-4d43-b821-b4440078724f" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="503/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="502" id="f74d43e0-2f64-4152-8676-853f8e1e11f4" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="502/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="500" id="3d57ec46-6d45-48e6-8c17-0b62ed90f525" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="500/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="405_GET" id="221a7301-4d9d-437d-9f05-002e89c43782" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="405/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request></con:method><con:method name="Negativo_Post" id="d9740750-4d6a-4d37-a276-ae7c0e331f89" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:f30="http://localhost/investidor/validar-venda/200%2F30605678839">f30:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="200" id="831e4271-b6fc-492f-8780-0a410e491cba" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/investidor/validar-venda/200%2F30605678839</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method><con:method name="Negativo_Del" id="a856236a-1be8-4b4d-b5ad-81d7e6145148" method="DELETE"><con:settings/><con:parameters/><con:request name="200" id="4209da35-3691-4878-a4d2-41fe9bda1bd1" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:resource name="Verificar carrinho de resgate para o investidor" path="/vender/carrinho/validar" id="b71e9154-d097-4942-8a37-d493ffb8d996"><con:description>3.3.4 Verificar carrinho de resgate para o investidor</con:description><con:settings/><con:parameters><con:parameter><con:name>mercado</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>negociadorCpf</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>codigoCesta</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>codigoTitulo</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>dataRecompra</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="MOCK_Verificar carrinho de resgate para o investidor" id="7fb583bb-601c-404e-a97a-19aca2b55d19" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:val="http://localhost/vender/carrinho/validar">val:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400 404 503 502 500 405</con:status><con:params/></con:representation><con:request name="200OK" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="200"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="210"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="400" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="400"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="404" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="404"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="503" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="503"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="502" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="502"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="500" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="500"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="405_GET" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/carrinho/validar</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="405"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request></con:method><con:method name="DIL_Verificar carrinho de resgate para o investidor" id="7fb583bb-601c-404e-a97a-19aca2b55d19" method="GET"><con:settings/><con:parameters/><con:request name="200OK" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="200"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="210"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="400" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="400"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="404" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="404"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="503" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="503"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="502" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="502"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="500" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="500"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request><con:request name="405_GET" id="3d988324-da7f-43bc-a357-655dc7563229" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="87345678765222"/>
+  <con:entry key="mercado" value="405"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9873771111"/>
+</con:parameters><con:parameterOrder><con:entry>mercado</con:entry><con:entry>negociadorCpf</con:entry><con:entry>codigoCesta</con:entry><con:entry>codigoTitulo</con:entry><con:entry>dataRecompra</con:entry></con:parameterOrder></con:request></con:method><con:method name="Negativo_Post" id="f430574f-2785-4873-a9eb-58527ff77db4" method="POST"><con:settings/><con:parameters/><con:request name="200" id="8bd44bbe-60e4-4c88-bb3f-1f91fdd2bbc2" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="76545678222"/>
+  <con:entry key="mercado" value="200"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="9876545678111"/>
+</con:parameters></con:request></con:method><con:method name="Negativo_Del" id="d247fa56-4c43-4bb1-a470-675b0dac0225" method="DELETE"><con:settings/><con:parameters/><con:request name="200" id="465300d0-6537-4784-b9c9-30c2642bfaba" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="codigoTitulo" value="8765678222"/>
+  <con:entry key="mercado" value="200"/>
+  <con:entry key="negociadorCpf" value="30605678839"/>
+  <con:entry key="dataRecompra" value="2018-09-09"/>
+  <con:entry key="codigoCesta" value="876678111"/>
+</con:parameters></con:request></con:method></con:resource><con:resource name="Inserir novo carrinho para o investidor" path="/investir/carrinho/inserir/" id="7f2d2b53-0fe6-4cf3-8a03-02590f56101b"><con:description>3.2.3 Inserir novo carrinho para o investidor</con:description><con:settings/><con:parameters/><con:method name="MOCK_Verificar resgate para investidor" id="96fe7494-6840-4d51-8e75-12163f4590c8" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ins="http://localhost/investir/carrinho/inserir/">ins:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400 404 503 500 405</con:status><con:params/></con:representation><con:request name="200OK" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":200,
+	"negociadorCpf":91573408549
+}</con:request><con:originalUri>http://localhost/investir/carrinho/inserir/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="200NOK" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":210,
+	"negociadorCpf":91573408549
+}</con:request><con:originalUri>http://localhost/investir/carrinho/inserir/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="400" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":400,
+	"negociadorCpf":91573408549
+}</con:request><con:originalUri>http://localhost/investir/carrinho/inserir/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="404" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":404,
+	"negociadorCpf":91573408549
+}</con:request><con:originalUri>http://localhost/investir/carrinho/inserir/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="503" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":503,
+	"negociadorCpf":91573408549
+}</con:request><con:originalUri>http://localhost/investir/carrinho/inserir/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="502" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":502,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="500" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":500,
+	"negociadorCpf":91573408549
+}</con:request><con:originalUri>http://localhost/investir/carrinho/inserir/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="405_POST" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":405,
+	"negociadorCpf":91573408549
+}</con:request><con:originalUri>http://localhost/investir/carrinho/inserir/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="DIL_Verificar resgate para investidor" id="96fe7494-6840-4d51-8e75-12163f4590c8" method="POST"><con:settings/><con:parameters/><con:request name="200OK" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":200,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="200NOK" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":210,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="400" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":400,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="404" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":404,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="503" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":503,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="502" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":502,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="500" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":500,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="405_POST" id="634558d6-0536-4a66-8643-8a89e0c70ecd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"mercado":500,
+	"negociadorCpf":91573408549
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Negativo_GET" id="50b8c860-7340-4c8c-aed6-3dc656073600" method="GET"><con:settings/><con:parameters/><con:request name="200" id="d730a682-c524-496d-82c2-3bf8ea4be42e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="Negativo_PUT" id="50b8c860-7340-4c8c-aed6-3dc656073600" method="PUT"><con:settings/><con:parameters/><con:request name="200" id="d730a682-c524-496d-82c2-3bf8ea4be42e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Listar títulos disponíveis para resgate do investidor" path="/vender/listar-titulos" id="08a67c26-9b9e-4a11-9156-83b8162b3c0b"><con:description>3.3.2 Listar títulos disponíveis para resgate do investidor</con:description><con:settings/><con:parameters><con:parameter><con:name>negociadorCpf</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>dataEmissao</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>dataVencimento</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>selic</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>isin</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>codigoTitulo</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>mercado</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>notCesta</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>tipoIndexador</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="MOCK_Listar títulos disponíveis para resgate do investidor" id="320522a8-7303-403c-8457-2ff1c5bcf877" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:lis="http://localhost/vender/listar-titulos">lis:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:lis="http://localhost/vender/listar-titulos">lis:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400 407 503 404 502 500 405</con:status><con:params/></con:representation><con:request name="200OK" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="200"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="210"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="400" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="400"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="404" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="404"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="503" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="503"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="502" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="502"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="500" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="500"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="405_GET" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/vender/listar-titulos</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="405"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request></con:method><con:method name="DIL_Listar títulos disponíveis para resgate do investidor" id="320522a8-7303-403c-8457-2ff1c5bcf877" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="200OK" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="200"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="210"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="400" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="400"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="404" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="404"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="503" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="503"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="502" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="502"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="500" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="500"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request><con:request name="405_GET" id="54e09466-8d8f-4aff-a5eb-3800385bf3a4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN3"/>
+  <con:entry key="codigoTitulo" value="87654567111"/>
+  <con:entry key="mercado" value="876556778222"/>
+  <con:entry key="dataVencimento" value="2018-09-08"/>
+  <con:entry key="dataEmissao" value="2018-09-09"/>
+  <con:entry key="tipoIndexador" value="765456555"/>
+  <con:entry key="negociadorCpf" value="405"/>
+  <con:entry key="notCesta" value="76545678333"/>
+  <con:entry key="isin" value="NTBN4"/>
+</con:parameters><con:parameterOrder><con:entry>negociadorCpf</con:entry><con:entry>dataEmissao</con:entry><con:entry>dataVencimento</con:entry><con:entry>selic</con:entry><con:entry>isin</con:entry><con:entry>codigoTitulo</con:entry><con:entry>mercado</con:entry><con:entry>notCesta</con:entry><con:entry>tipoIndexador</con:entry></con:parameterOrder></con:request></con:method><con:method name="Negativo_PUT" id="62b86c2d-8e98-402d-94fa-f4ea63bcb733" method="PUT"><con:settings/><con:parameters/><con:request name="200" id="e7d96ca1-6887-4556-97a5-5ebd03dd3515" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN03"/>
+  <con:entry key="codigoTitulo" value="8765567111"/>
+  <con:entry key="mercado" value="876545671222"/>
+  <con:entry key="dataVencimento" value="2018-09-09"/>
+  <con:entry key="dataEmissao" value="2018-09-08"/>
+  <con:entry key="tipoIndexador" value="987656789444"/>
+  <con:entry key="negociadorCpf" value="200"/>
+  <con:entry key="notCesta" value="7655678333"/>
+  <con:entry key="isin" value="NTBN04"/>
+</con:parameters></con:request></con:method><con:method name="Negativo_DEL" id="62b86c2d-8e98-402d-94fa-f4ea63bcb733" method="DELETE"><con:settings/><con:parameters/><con:request name="200" id="e7d96ca1-6887-4556-97a5-5ebd03dd3515" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="selic" value="NTBN03"/>
+  <con:entry key="codigoTitulo" value="8765567111"/>
+  <con:entry key="mercado" value="876545671222"/>
+  <con:entry key="dataVencimento" value="2018-09-09"/>
+  <con:entry key="dataEmissao" value="2018-09-08"/>
+  <con:entry key="tipoIndexador" value="987656789444"/>
+  <con:entry key="negociadorCpf" value="200"/>
+  <con:entry key="notCesta" value="7655678333"/>
+  <con:entry key="isin" value="NTBN04"/>
+</con:parameters></con:request></con:method></con:resource><con:resource name="Alterar títulos de um carrinho" path="/investir/alterar/{pathParameter}" id="68f3ad80-26a2-4f53-8192-4fe225f42e82"><con:description>3.2.6 Alterar títulos de um carrinho</con:description><con:settings/><con:parameters><con:parameter><con:name>pathParameter</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="MOCK_Alterar títulos de um carrinho" id="68dfa0db-364c-4265-9931-5ec3a160acd4" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:f30="http://localhost/investir/alterar/200%2F30605678839%2F876567111">f30:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400 404 502 503 500 407 405</con:status><con:params/></con:representation><con:request name="200OK" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo":173,
+				"quantidade":0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo":175,
+				"quantidade":1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/200%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/210%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="210/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="400" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/400%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="400/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="404" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/404%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="404/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="503" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/503%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="503/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="502" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/502%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="502/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="500" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/500%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="500/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="405_PUT" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:originalUri>http://localhost/investir/alterar/405%2F30605678839%2F876567111</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="405/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request></con:method><con:method name="DIL_Alterar títulos de um carrinho" id="68dfa0db-364c-4265-9931-5ec3a160acd4" method="PUT"><con:settings/><con:parameters/><con:request name="200OK" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="200NOK" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="210/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="400" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="400/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="404" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="404/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="503" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="503/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="502" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="502/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="500" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="500/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request><con:request name="405_PUT" id="e49707c7-ade1-4322-bc32-a9683e977f0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="405/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>pathParameter</con:entry></con:parameterOrder></con:request></con:method><con:method name="Negativo_POST" id="636ba828-820f-46e1-a6d1-8d75d879a912" method="POST"><con:settings/><con:parameters/><con:request name="200" id="ba3f47fa-ff12-4cbd-b3ca-89cfe5e4f4f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5000</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method><con:method name="Negativo_DEL" id="636ba828-820f-46e1-a6d1-8d75d879a912" method="POST"><con:settings/><con:parameters/><con:request name="200" id="ba3f47fa-ff12-4cbd-b3ca-89cfe5e4f4f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:5000</con:endpoint><con:request>{
+	"titulos": [{
+			"titulo": {
+				"codigoTitulo": 173,
+				"quantidade": 0.4262611
+			}
+		},
+		{
+			"titulo": {
+				"codigoTitulo": 175,
+				"quantidade": 1.4365322
+			}
+		}
+	]
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="pathParameter" value="200/30605678839/876567111" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource></con:interface><con:restMockService id="edf2fbbc-b3c4-432e-b13e-2e20ac63c9a1" port="8080" path="/" host="localhost" name="MockService_Verificar resgate para investidor" docroot=""><con:settings/><con:properties/><con:restMockAction name="/investidor/validar-venda/" method="GET" resourcePath="/investidor/validar-venda/" id="abe05b15-e4eb-4065-ac9c-76d2856fe7ee"><con:settings/><con:defaultResponse>DEFAULT</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("200/30605678839") )
+{
+    return "200OK"
+}else if( requestPath.contains("210/30605678839") )
+{
+    return "200NOK"
+}else if( requestPath.contains("400/30605678839") )
+{
+    return "400"
+}else if( requestPath.contains("404/30605678839") )
+{
+    return "404"
+}else if( requestPath.contains("503/30605678839") )
+{
+    return "503"
+}else if( requestPath.contains("502/30605678839") )
+{
+    return "502"
+}else if( requestPath.contains("500/30605678839") )
+{
+    return "500"
+}else if( requestPath.contains("405/30605678839") )
+{
+    return "405"
+}</con:dispatchPath><con:response name="200OK" id="ee90f1d1-a524-4ac7-a140-6d7453b0b3da" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+  "ID_SUCESSO": 1,
+  "ID_SUCESSO_DESCRICAO": "Processamento encerrado com sucesso."
+}
+</con:responseContent></con:response><con:response name="DEFAULT" id="ea487988-befa-4271-ad1f-4028d88883e2" httpResponseStatus="404"><con:settings/><con:responseContent/></con:response><con:response name="200NOK" id="b0080790-30fc-4355-8eca-00c5b2b3725d" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+  "ID_SUCESSO": 18181818,
+  "ID_SUCESSO_DESCRICAO": "Falha no encerramento do processo.",
+  "ALERTAS": {
+    "ALERTA": {
+      "CODIGO": -2147220910,
+      "DESCRICAO": " Parâmetro(s) de entrada inválido(s)."
+    }
+  }
+</con:responseContent></con:response><con:response name="400" id="6ecc7c91-00fc-46d5-b384-6a78d744fe68" httpResponseStatus="400"><con:settings/><con:responseContent/></con:response><con:response name="404" id="969fee14-7572-4468-aca9-98b0b4953a49" httpResponseStatus="404"><con:settings/><con:responseContent/></con:response><con:response name="503" id="e59b6445-8547-43af-a203-3a54a6c739db" httpResponseStatus="503"><con:settings/><con:responseContent/></con:response><con:response name="502" id="2e7d8daf-9372-4b5c-9af3-d348fd5fe210" httpResponseStatus="502"><con:settings/><con:responseContent/></con:response><con:response name="500" id="a44811b9-5f7f-4982-8d9b-f34789b6adc2" httpResponseStatus="500"><con:settings/><con:responseContent/></con:response><con:response name="405" id="c657209e-ff8a-499f-b0bf-496c18676172" httpResponseStatus="405"><con:settings/><con:responseContent/></con:response></con:restMockAction></con:restMockService><con:restMockService id="c4da651f-a0c6-47ea-8173-d2645493faf2" port="8080" path="/" host="localhost" name="MockService_Verificar Carrinho de Resgate para o Investidor" docroot=""><con:settings/><con:properties/><con:restMockAction name="/vender/carrinho/validar" method="GET" resourcePath="/vender/carrinho/validar" id="17e13098-b5ca-433e-aab7-53cff6d95d2c"><con:settings/><con:defaultResponse>DEFAULT</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath><![CDATA[// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("mercado=200") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "200OK"
+}else if( queryString.contains("mercado=210") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "200NOK"
+}else if( queryString.contains("mercado=400") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "400"
+}else if( queryString.contains("mercado=404") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "404"
+}else if( queryString.contains("mercado=503") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "503"
+}else if( queryString.contains("mercado=502") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "502"
+}else if( queryString.contains("mercado=500") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "500"
+}else if( queryString.contains("mercado=405") && queryString.contains("negociadorCpf=30605678839") && queryString.contains("codigoCesta=9873771111") && queryString.contains("codigoTitulo=87345678765222") && queryString.contains("dataRecompra=2018-09-09") )
+{
+    return "405"
+}]]></con:dispatchPath><con:response name="200OK" id="3d19f49f-6588-4118-a96a-1f2b532f366f" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+	"ID_SUCESSO": 1344333,
+	"ID_SUCESSO_DESCRICAO": "Processamento encerrado com sucesso.",
+	"CESTAS": {
+		"CESTA": {
+			"TITULOS": {
+				"TITULO": {
+					"CODIGO_CESTA": 900730,
+					"MERCADO": 3833,
+					"NEGOCIADOR": {
+						"CODIGO_AC": 1011,
+						"CPF": 11111111111
+					},
+					"DATA_COMPRA": "2017-08-31T16:25:13.0000000-03:00",
+					"SITUACAO": 4,
+					"TIPO_CESTA": 2,
+					"ID_NEGOCIADOR": 1,
+					"CODIGO_TITULO": 84,
+					"QUANTIDADE_VENDA": 10.00,
+					"VALOR_TITULO": 3196.520000
+				}
+			}
+		}
+	}
+}</con:responseContent></con:response><con:response name="200NOK" id="4e5a724f-2b29-408b-a2a3-b4a30a788e15" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+	"ID_SUCESSO": 18181818,
+	"ID_SUCESSO_DESCRICAO": "Falha no encerramento do processo.",
+	"ALERTAS": {
+		"ALERTA": {
+			"CODIGO": -2147220910,
+			"DESCRICAO": " Parâmetro(s) de entrada inválido(s)."
+		}
+	}
+}</con:responseContent></con:response><con:response name="400" id="b3f1af6c-9a5a-48a3-b22c-ef0302632918" httpResponseStatus="400"><con:settings/><con:responseContent/></con:response><con:response name="404" id="0dbbb99c-4779-411c-8839-7b6e49b2e316" httpResponseStatus="404"><con:settings/><con:responseContent/></con:response><con:response name="503" id="5198ac23-9f38-49dc-85f1-f03521a9f2e9" httpResponseStatus="503"><con:settings/><con:responseContent/></con:response><con:response name="502" id="ec395f10-3e1f-4768-828f-29782e4b736c" httpResponseStatus="502"><con:settings/><con:responseContent/></con:response><con:response name="500" id="9b36f693-5ab8-4de1-8f4e-6c622d05ab15" httpResponseStatus="500"><con:settings/><con:responseContent/></con:response><con:response name="405" id="6e5a62fe-715d-4181-9cd0-c5da635f534d" httpResponseStatus="405"><con:settings/><con:responseContent/></con:response><con:response name="DEFAULT" id="d1cc7d31-d09a-4d13-8484-c2b42f928866" httpResponseStatus="407"><con:settings/><con:responseContent/></con:response></con:restMockAction></con:restMockService><con:restMockService id="e18d7277-23a2-471f-bbf9-34f69614476c" port="8080" path="/" host="localhost" name="MockService_Inserir novo carrinho para o investidor" docroot=""><con:settings/><con:properties/><con:restMockAction name="/investir/carrinho/inserir/" method="POST" resourcePath="/investir/carrinho/inserir/" id="48c8e0b7-bc6a-412e-a8bc-192251009639"><con:settings/><con:defaultResponse>DEFAULT</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath><![CDATA[// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains('"mercado":200') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "200OK"
+}else if( requestBody.contains('"mercado":210') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "200NOK"
+}else if( requestBody.contains('"mercado":400') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "400"
+}else if( requestBody.contains('"mercado":404') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "404"
+}else if( requestBody.contains('"mercado":503') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "503"
+}else if( requestBody.contains('"mercado":502') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "502"
+}else if( requestBody.contains('"mercado":500') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "500"
+}else if( requestBody.contains('"mercado":405') && requestBody.contains('"negociadorCpf":91573408549') )
+{
+    // return the name of the response you want to dispatch
+    return "405"
+}
+]]></con:dispatchPath><con:response name="200OK" id="8958944c-b0fa-4827-af94-101db0990606" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+	"ID_SUCESSO": 122111,
+	"ID_SUCESSO_DESCRICAO": "Processamento encerrado com sucesso.",
+	"CESTA": {
+		"CODIGO": 900657
+	}
+}</con:responseContent></con:response><con:response name="200NOK" id="fbcfcb98-a3ec-4f50-a61c-11c443583a7f" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+	"ID_SUCESSO": 826272,
+	"ID_SUCESSO_DESCRICAO": "Falha no encerramento do processo.",
+	"ALERTAS": {
+		"ALERTA": {
+			"CODIGO": -2147220910,
+			"DESCRICAO": " Parâmetro(s) de entrada inválido(s)."
+		}
+	}
+}</con:responseContent></con:response><con:response name="400" id="d4b1993d-8571-49ea-9abf-35b66bb468b5" httpResponseStatus="400"><con:settings/><con:responseContent/></con:response><con:response name="404" id="9bfcdf68-721c-4eb9-adb4-e7b0d414af83" httpResponseStatus="404"><con:settings/><con:responseContent/></con:response><con:response name="503" id="aa3b64c4-df0e-4529-9cf1-cc31a433f36c" httpResponseStatus="503"><con:settings/><con:responseContent/></con:response><con:response name="502" id="9208432a-af17-4d69-ad26-55fa255ab278" httpResponseStatus="502"><con:settings/><con:responseContent/></con:response><con:response name="500" id="36326e17-8c3f-4271-9f50-a7da1d299988" httpResponseStatus="500"><con:settings/><con:responseContent/></con:response><con:response name="405" id="7ce074ec-eb92-47d5-8d81-880d4045eb22" httpResponseStatus="405"><con:settings/><con:responseContent/></con:response><con:response name="DEFAULT" id="c52c34db-7c33-4d07-9b1a-50662eb9bf2d" httpResponseStatus="407"><con:settings/><con:responseContent/></con:response></con:restMockAction></con:restMockService><con:restMockService id="9575c1f5-c37a-4951-bd31-7673a52e2824" port="8080" path="/" host="localhost" name="MockService_Listar títulos disponíveis para resgate do investidor" docroot=""><con:settings/><con:properties/><con:restMockAction name="/vender/listar-titulos" method="GET" resourcePath="/vender/listar-titulos" id="3a07078e-10a0-42fa-b07b-e7b2590f4425"><con:settings/><con:defaultResponse>DEFAULT</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath><![CDATA[// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("negociadorCpf=200") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "200OK"
+}else if( queryString.contains("negociadorCpf=210") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "200NOK"
+}else if( queryString.contains("negociadorCpf=400") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "400"
+}else if( queryString.contains("negociadorCpf=404") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "404"
+}else if( queryString.contains("negociadorCpf=503") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "503"
+}else if( queryString.contains("negociadorCpf=502") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "502"
+}else if( queryString.contains("negociadorCpf=500") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "500"
+}else if( queryString.contains("negociadorCpf=405") && queryString.contains("dataEmissao=2018-09-09") && queryString.contains("dataVencimento=2018-09-08") && queryString.contains("selic=NTBN3") && queryString.contains("isin=NTBN4") && queryString.contains("codigoTitulo=87654567111") && queryString.contains("mercado=876556778222") && queryString.contains("notCesta=76545678333") && queryString.contains("tipoIndexador=765456555") )
+{
+    return "405"
+}]]></con:dispatchPath><con:response name="200OK" id="7ac056d5-a53d-4130-bb01-904b762c8840" httpResponseStatus="200" mediaType="application/json" encoding="iso-8859-1"><con:settings/><con:responseContent>{
+	"ID_SUCESSO": 765445671,
+	"ID_SUCESSO_DESCRICAO": "Processamento encerrado com sucesso.",
+	"TITULOS": {
+		"TITULO": {
+			"TIPO_TITULO": "NTN-B",
+			"CODIGO_TITULO": 84,
+			"DATA_EMISSAO": "2003-10-15T00:00:00.0000000-03:00",
+			"DATA_VENCIMENTO": "2024-08-15T00:00:00.0000000-03:00",
+			"ISIN": "BRSTNCNTB096",
+			"SELIC": 760199,
+			"NOME_TITULO": "Tesouro IPCA+ com Juros Semestrais 2024 (NTNB)",
+			"QUANTIDADE_DISPONIVEL_VENDA": 40000.00,
+			"VALOR_VENDA": 3194.650000,
+			"VALOR_TAXA_VENDA": 5.2900,
+			"MERCADO": 3826,
+			"INDEXADOR": {
+				"NOME": "IPCA"
+			},
+			"QUANTIDADE_SALDO": 30.00
+		}
+	}
+}</con:responseContent></con:response><con:response name="200NOK" id="0472757b-4007-4869-bede-a013b7d210aa" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+	"ID_SUCESSO": 765434567,
+	"ID_SUCESSO_DESCRICAO": "Falha no encerramento do processo.",
+	"ALERTAS": {
+		"ALERTA": {
+			"CODIGO": -2147220910,
+			"DESCRICAO": " Parâmetro(s) de entrada inválido(s)."
+		}
+	}
+}</con:responseContent></con:response><con:response name="400" id="d16783dd-b308-4743-a70b-fb0360cdce9b" httpResponseStatus="400"><con:settings/><con:responseContent/></con:response><con:response name="404" id="fdcc120c-e2ee-42bd-a668-c53a3c886523" httpResponseStatus="404"><con:settings/><con:responseContent/></con:response><con:response name="503" id="2f7a9697-2725-4300-ba0e-6258fefa19f5" httpResponseStatus="503"><con:settings/><con:responseContent/></con:response><con:response name="502" id="af2a0ee1-8cba-4e12-8dfd-154c5dd4a2b0" httpResponseStatus="502"><con:settings/><con:responseContent/></con:response><con:response name="500" id="19c94f06-0bfa-4496-b778-a94eee1bf523" httpResponseStatus="500"><con:settings/><con:responseContent/></con:response><con:response name="405" id="1659758f-03e5-402e-b77c-a0e17a97554e" httpResponseStatus="405"><con:settings/><con:responseContent/></con:response><con:response name="407" id="c5845630-c236-42fe-8fc9-30b1e565afb5" httpResponseStatus="407"><con:settings/><con:responseContent/></con:response><con:response name="DEFAULT" id="54f73aa4-996b-4565-a44b-d4521366ab6a" httpResponseStatus="407"><con:settings/><con:responseContent/></con:response></con:restMockAction></con:restMockService><con:restMockService id="f4726922-328d-46ab-ab82-c7814659f3e4" port="8080" path="/" host="localhost" name="MockService_Alterar títulos de um carrinho" docroot=""><con:settings/><con:properties/><con:restMockAction name="/investir/alterar/200/30605678839/876567111" method="PUT" resourcePath="/investir/alterar/" id="221d6a23-3870-4cf6-980c-9f2298980df5"><con:settings/><con:defaultResponse>407</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("200/30605678839/876567111"))
+{
+    return "200OK"
+}else if( requestPath.contains("210/30605678839/876567111"))
+{
+    return "200NOK"
+}else if( requestPath.contains("400/30605678839/876567111"))
+{
+    return "400"
+}else if( requestPath.contains("404/30605678839/876567111"))
+{
+    return "404"
+}else if( requestPath.contains("503/30605678839/876567111"))
+{
+    return "503"
+}else if( requestPath.contains("502/30605678839/876567111"))
+{
+    return "502"
+}else if( requestPath.contains("500/30605678839/876567111"))
+{
+    return "500"
+}else if( requestPath.contains("405/30605678839/876567111"))
+{
+    return "405"
+}</con:dispatchPath><con:response name="200OK" id="43723ccd-68cb-42b5-8432-8b26861f32be" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+  "ID_SUCESSO": 17654567,
+  "ID_SUCESSO_DESCRICAO": "Processamento encerrado com sucesso."
+}
+</con:responseContent></con:response><con:response name="200NOK" id="4bf76976-5065-4ad9-8ecb-5c327e8b6607" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+	"ID_SUCESSO": 87654567,
+	"ID_SUCESSO_DESCRICAO": "Falha no encerramento do processo.",
+	"ALERTAS": {
+		"ALERTA": {
+			"CODIGO": -2147220910,
+			"DESCRICAO": " Parâmetro(s) de entrada inválido(s)."
+		}
+	}
+}</con:responseContent></con:response><con:response name="400" id="af2d6334-4056-41ca-8888-31bfa27eab76" httpResponseStatus="400"><con:settings/><con:responseContent/></con:response><con:response name="404" id="d2b09af1-a395-4a8d-a33d-e1a0cdc74e35" httpResponseStatus="404"><con:settings/><con:responseContent/></con:response><con:response name="503" id="4bc1c4d0-404b-4bdf-b873-6b3ca184a0e8" httpResponseStatus="503"><con:settings/><con:responseContent/></con:response><con:response name="502" id="e7df23e4-ef12-48f5-a234-a3f70ff851af" httpResponseStatus="502"><con:settings/><con:responseContent/></con:response><con:response name="500" id="a32fa5df-1f5c-4ad2-a392-98c8b78344c6" httpResponseStatus="500"><con:settings/><con:responseContent/></con:response><con:response name="405" id="46ae9c04-a41d-43b2-a4df-99bd825c0e71" httpResponseStatus="405"><con:settings/><con:responseContent/></con:response><con:response name="407" id="7911647e-a61f-43aa-88fd-bdb33c593964" httpResponseStatus="407"><con:settings/><con:responseContent/></con:response></con:restMockAction></con:restMockService><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="OVERRIDE">http://localhost:5000</con:endpoint></con:endpointStrategy><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
